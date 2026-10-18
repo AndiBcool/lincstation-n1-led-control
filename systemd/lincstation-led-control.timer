@@ -1,0 +1,9 @@
+[Unit]
+Description=LincStation N1 LED Aktualisierung
+[Timer]
+OnBootSec=30s
+OnUnitInactiveSec=30s
+AccuracySec=1s
+Unit=lincstation-led-control.service
+[Install]
+WantedBy=timers.target

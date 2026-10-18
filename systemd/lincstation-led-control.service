@@ -1,0 +1,8 @@
+[Unit]
+Description=LincStation N1 LED/SMART Controller
+After=multi-user.target
+[Service]
+Type=oneshot
+User=root
+ExecStart=/bin/bash /usr/local/sbin/lincstation-led-control.sh --apply
+TimeoutStartSec=30

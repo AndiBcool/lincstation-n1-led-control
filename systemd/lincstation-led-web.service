@@ -1,0 +1,16 @@
+[Unit]
+Description=LincStation N1 RGB Web UI
+After=network.target
+[Service]
+Type=simple
+User=lincledweb
+Group=lincledweb
+WorkingDirectory=/opt/lincstation-led-web
+ExecStart=/usr/bin/python3 -m flask --app app run --host=0.0.0.0 --port=8088 --no-debugger --no-reload
+Restart=on-failure
+NoNewPrivileges=true
+ProtectSystem=strict
+ReadWritePaths=/opt/lincstation-led-web/data
+PrivateTmp=true
+[Install]
+WantedBy=multi-user.target
