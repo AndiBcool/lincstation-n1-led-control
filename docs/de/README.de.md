@@ -19,6 +19,10 @@ Dieses Projekt steuert sieben kleine Laufwerks-/Netzwerk-LEDs und den RGB-Streif
 - Weboberfläche auf Port 8088, Passwortschutz optional, Passwort über UI änderbar.
 - systemd-Timer alle ca. 30 Sekunden; RAM-Zwischenspeicher unter `/run/lincstation-led/` vermeidet wiederholte identische I²C-Schreibzugriffe.
 
+  <img src="Webpage N1.PNG"
+     alt="LincStation N1 Weboberfläche"
+     width="600">
+
 ## Vor der Installation – unbedingt lesen
 
 **I²C-Zugriffe sind hardwareabhängig und können bei falschem Bus, falscher Adresse oder falschem Register Schäden oder Fehlfunktionen auslösen.** Kein allgemeines Plug-and-Play-Tool. Lies [Hardware-Nachweis](HARDWARE-VERIFIKATION.md), [Bus-Sicherheit](SICHERHEIT-UND-BUS.md), [Register](I2C-REGISTER.md) und [Python/Web-Architektur](PYTHON-WEB-UND-ARCHITEKTUR.md). Das Programm darf nur auf einer identifizierten LincStation N1 mit überprüfter Controllerzuordnung verwendet werden.
