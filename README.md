@@ -101,7 +101,7 @@ docs/I2C-SAFETY-AND-BUS.md
 docs/PYTHON-WEB-AND-ARCHITECTURE.md
 docs/SOURCE-CODE-REFERENCE.md
 docs/de/README.de.md
-docs/de/ (original German technical documentation)
+docs/de/I2C-REGISTER.md\ndocs/de/SICHERHEIT-UND-BUS.md\ndocs/de/HARDWARE-VERIFIKATION.md\ndocs/de/PYTHON-WEB-UND-ARCHITEKTUR.md\ndocs/de/VOLLSTAENDIGER-QUELLCODE.md
 install.sh
 enable-leds.sh
 uninstall.sh
@@ -111,6 +111,16 @@ LICENSE
 ## Technical identification of the I²C host
 
 The investigated N1 used Intel PCI host controller `0000:00:15.0` (`8086:4de8`, `intel-lpss`) and sysfs path `/sys/devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-0/i2c-dev/i2c-0`. This explains why Linux exposed the adapter as `i2c-0` on that machine. Mapping address `0x26` to LED functions also relied on vendor software and practical tests; see [hardware verification](docs/HARDWARE-VERIFICATION.md).
+
+## Python, HTML and automatic installation
+
+The complete Python application is in [`web/app.py`](web/app.py), and the HTML/CSS/JavaScript interface is in [`web/templates/index.html`](web/templates/index.html). The installer `install.sh` copies both into `/opt/lincstation-led-web/`. Python dependencies are installed through `apt`; no separate `pip` installation is needed. For details, see [Python/web architecture](docs/PYTHON-WEB-AND-ARCHITECTURE.md).
+
+## Complete source code
+
+The executable source files are available directly in the repository: [`web/app.py`](web/app.py), [`web/templates/index.html`](web/templates/index.html), [`controller/lincstation-led-control.sh`](controller/lincstation-led-control.sh), and the root-level installation and management scripts.
+
+For an English overview with direct links to the source files, see the [source code reference](docs/SOURCE-CODE-REFERENCE.md). The [complete annotated source code catalog](docs/de/VOLLSTAENDIGER-QUELLCODE.md) reproduces the source files in full, but its commentary is currently in German. This catalog is documentation; edit the actual source files, not the reproduced listings.
 
 ## Related project
 

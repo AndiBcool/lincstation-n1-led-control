@@ -93,10 +93,17 @@ web/templates/index.html
 systemd/lincstation-led-control.service
 systemd/lincstation-led-control.timer
 systemd/lincstation-led-web.service
-docs/I2C-REGISTER.md
-docs/SICHERHEIT-UND-BUS.md
-docs/HARDWARE-VERIFIKATION.md
-docs/PYTHON-WEB-UND-ARCHITEKTUR.md
+docs/I2C-REGISTERS.md
+docs/I2C-SAFETY-AND-BUS.md
+docs/HARDWARE-VERIFICATION.md
+docs/PYTHON-WEB-AND-ARCHITECTURE.md
+docs/SOURCE-CODE-REFERENCE.md
+docs/de/README.de.md
+docs/de/I2C-REGISTER.md
+docs/de/SICHERHEIT-UND-BUS.md
+docs/de/HARDWARE-VERIFIKATION.md
+docs/de/PYTHON-WEB-UND-ARCHITEKTUR.md
+docs/de/VOLLSTAENDIGER-QUELLCODE.md
 install.sh
 enable-leds.sh
 uninstall.sh
@@ -116,7 +123,7 @@ Die komplette Python-Anwendung liegt in `web/app.py`, die HTML/CSS/JavaScript-Ob
 
 ## Vollständiger Quellcode zum Nachlesen
 
-Alle Python-, HTML-/CSS-/JavaScript- und Bash-Quelldateien sind unter [`docs/VOLLSTAENDIGER-QUELLCODE.md`](docs/VOLLSTAENDIGER-QUELLCODE.md) vollständig abgedruckt. Die ausführbaren Originaldateien liegen in `web/`, `controller/` und im Projektverzeichnis. Die Architektur wird in [`docs/PYTHON-WEB-UND-ARCHITEKTUR.md`](PYTHON-WEB-UND-ARCHITEKTUR.md) erläutert.
+Alle Python-, HTML-/CSS-/JavaScript- und Bash-Quelldateien sind im [vollständigen Quellcode-Katalog](VOLLSTAENDIGER-QUELLCODE.md) abgedruckt. Die ausführbaren Originaldateien liegen in `web/`, `controller/` und im Projektverzeichnis. Die Architektur wird in [`docs/PYTHON-WEB-UND-ARCHITEKTUR.md`](PYTHON-WEB-UND-ARCHITEKTUR.md) erläutert.
 
 ## Weiteres Projekt
 
