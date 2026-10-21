@@ -19,6 +19,11 @@ This project controls **seven drive/network LEDs and the RGB strip** under Linux
 - Web UI on port **8088**; optional password protection and password changes through the UI.
 - systemd timer approximately every **30 seconds**; `/run/lincstation-led/` caches previous state to avoid redundant I²C writes.
 
+<img src="Webpage N1.PNG"
+     alt="LincStation N1 Weboberfläche"
+     width="600">
+
+
 ## Read before installing — hardware safety
 
 **I²C access is hardware-specific. Incorrect bus, address or register writes may disrupt or damage hardware. This is not a universal plug-and-play utility.** Use it only on an identified LincStation N1 with a verified controller mapping.
