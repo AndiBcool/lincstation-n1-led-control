@@ -19,7 +19,7 @@ Dieses Projekt steuert sieben kleine Laufwerks-/Netzwerk-LEDs und den RGB-Streif
 - Weboberfläche auf Port 8088, Passwortschutz optional, Passwort über UI änderbar.
 - systemd-Timer alle ca. 30 Sekunden; RAM-Zwischenspeicher unter `/run/lincstation-led/` vermeidet wiederholte identische I²C-Schreibzugriffe.
 
-  <img src="Webpage N1.PNG"
+<img src="../../Webpage N1.PNG"
      alt="LincStation N1 Weboberfläche"
      width="600">
 
